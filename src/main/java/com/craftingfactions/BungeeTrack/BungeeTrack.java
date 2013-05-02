@@ -30,7 +30,7 @@ public class BungeeTrack extends Plugin implements Listener {
 
 	this.logger = new PluginLogger(this);
 
-	ProxyServer.getInstance().getPluginManager().registerListener(this);
+	ProxyServer.getInstance().getPluginManager().registerListener(this, this);
 
 	getLogger().log(Level.INFO, "Enabled BungeeTrack");
 
