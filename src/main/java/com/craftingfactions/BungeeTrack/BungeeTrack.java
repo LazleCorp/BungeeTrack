@@ -10,13 +10,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.event.LoginEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
-
-import com.google.common.eventbus.Subscribe;
+import net.md_5.bungee.event.EventHandler;
 
 public class BungeeTrack extends Plugin implements Listener {
 
@@ -36,7 +34,7 @@ public class BungeeTrack extends Plugin implements Listener {
 
     }
 
-    @Subscribe
+    @EventHandler
     public void onLoginEvent(LoginEvent event) {
 	getLogger().log(Level.INFO, "got login event");
 	try {
