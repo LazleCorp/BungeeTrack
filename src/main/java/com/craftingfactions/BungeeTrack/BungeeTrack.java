@@ -32,11 +32,11 @@ public class BungeeTrack extends Plugin implements Listener {
 	    out.println (
 	    		"Username: "
 	    		+ ev.getConnection().getName()
-	    		+ "IP: "
+	    		+ " IP: "
 	    		+ ev.getConnection().getAddress().getAddress().toString()
-	    		+ "used "
+	    		+ " used "
 	    		+ ev.getConnection().getVirtualHost().getHostString()
-	    		+ "at "
+	    		+ " at "
 	    		+ date);
 	    out.close();    
 	    } 
